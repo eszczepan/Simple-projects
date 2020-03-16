@@ -1,0 +1,18 @@
+body {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-family: monospace;
+  font-size: 16px;
+  letter-spacing: .8px;
+}
+
+.spnCursor {
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.active {
+  opacity: 0;
+  transition: 0.2s ease;
+}
