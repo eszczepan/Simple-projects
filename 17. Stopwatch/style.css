@@ -1,0 +1,24 @@
+body {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.btn {
+  background: #333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding: 15px 70px;
+  border: 2px solid #881238;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .35s;
+  outline: none;
+}
+
+.btn:hover {
+  padding: 13px 90px;
+  background: #444;
+}
