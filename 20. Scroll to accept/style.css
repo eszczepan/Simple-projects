@@ -1,0 +1,41 @@
+body {
+  background-color: #333;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 400px;
+  height: 70vh;
+  padding: 20px;
+  border: 1px solid black;
+  background: white;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.terms-and-conditions {
+  overflow: scroll;
+}
+
+button {
+  background: #20d320;
+  color: #fff;
+  font-size: 1rem;
+  padding: 20px;
+  transition: all 0.2s;
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  background: #20c720;
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
