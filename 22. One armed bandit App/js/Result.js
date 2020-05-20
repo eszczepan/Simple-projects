@@ -12,5 +12,3 @@ class Result {
     else return false;
   }
 }
-
-Result.moneyWinInGame(true, 20);
