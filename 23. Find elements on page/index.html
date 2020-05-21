@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find elements</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <form class="form form--add">
+        <h1 class="form__header">Add element to DOM</h1>
+        <input type="text" class="form__input" name="html" placeholder="HTML element">
+        <input type="text" class="form__input" name="text" placeholder="Text">
+        <input type="text" class="form__input" name="attr" placeholder="Attribute">
+        <input type="text" class="form__input" name="attrVal" placeholder="Attribute value">
+        <input class="form__button add" type="button" name="btn" value="Add element"></input>
+      </form>
+      <form class="form form--search">
+        <h1 class="form__header">Search for element in DOM</h1>
+        <input type="text" class="form__input" name="search" placeholder="Element name">
+        <input class="form__button search" type="button" name="btn" value="Search for element"></input>
+      </form>
+      <div class="info">
+        <h1 class="info__h1">Info about searched element</h1>
+      </div>
+      <div class="elements">
+        <h1 class="elements__h1">Added elements</h1>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/AddElement.js"></script>
+  <script src="./js/SearchElement.js"></script>
+  <script src="./js/App.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
