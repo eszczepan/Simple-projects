@@ -7,17 +7,22 @@ const text = document.getElementById("text");
 const amount = document.getElementById("amount");
 const btn = document.querySelector(".btn");
 
-let transactions = [];
+const localStorageTransactions = JSON.parse(
+  localStorage.getItem("transactions")
+);
+let transactions =
+  localStorage.getItem("transactions") !== null ? localStorageTransactions : [];
 
 const generateID = () => {
-  Math.floor(Math.random() * 10000000);
+  return Math.floor(Math.random() * 10000000);
 };
 
 const generateTransactions = (transaction) => {
+  const sign = transaction.amount < 0 ? "-" : "+";
   const item = document.createElement("li");
   item.classList.add(transaction.amount > 0 ? "plus" : "minus");
   item.innerHTML = `
-  ${transaction.text}<span>${Math.abs(
+  ${transaction.text}<span>${sign} ${Math.abs(
     transaction.amount
   )} zl</span><button class="delete-btn" onclick="deleteTransaction(${
     transaction.id
@@ -52,7 +57,7 @@ const addTransaction = (e) => {
     console.log("error");
   } else {
     const item = {
-      id: generateID,
+      id: generateID(),
       text: text.value,
       amount: +amount.value,
     };
@@ -60,6 +65,7 @@ const addTransaction = (e) => {
     transactions.push(item);
     generateTransactions(item);
     updateBalance();
+    updateLocalStorage();
     text.value = "";
     amount.value = "";
   }
@@ -68,6 +74,11 @@ const addTransaction = (e) => {
 const deleteTransaction = (id) => {
   transactions = transactions.filter((transaction) => transaction.id !== id);
   init();
+  updateLocalStorage();
+};
+
+const updateLocalStorage = () => {
+  localStorage.setItem("transactions", JSON.stringify(transactions));
 };
 
 const init = () => {
