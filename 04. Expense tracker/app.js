@@ -1,11 +1,13 @@
 const balance = document.getElementById("balance");
-const income = document.getElementById("money-plus");
-const outcome = document.getElementById("money-minus");
+const moneyPlus = document.getElementById("money-plus");
+const moneyMinus = document.getElementById("money-minus");
 const list = document.getElementById("list");
 const form = document.getElementById("form");
 const text = document.getElementById("text");
 const amount = document.getElementById("amount");
 const btn = document.querySelector(".btn");
+let income = 0;
+let outcome = 0;
 
 const invalidInput = (textVal, amountVal) => {
   if (amountVal === "" || amountVal === 0) {
@@ -16,6 +18,19 @@ const invalidInput = (textVal, amountVal) => {
     console.log("enter text");
     text.classList.add("invalidInput");
   }
+};
+
+const updateBalance = (classe, value) => {
+  money = parseInt(value);
+  if (classe === "plus") {
+    income += money;
+    moneyPlus.textContent = `$${income}`;
+  } else {
+    outcome += money;
+    moneyMinus.textContent = `$${outcome}`;
+  }
+
+  balance.textContent = `${income - outcome}$`;
 };
 
 const clearInputs = () => {
@@ -40,6 +55,7 @@ const addElement = (textVal, amountVal, classe) => {
   newItem.appendChild(deleteBtn);
 
   list.appendChild(newItem);
+  updateBalance(classe, amountVal);
   clearInputs();
 };
 
