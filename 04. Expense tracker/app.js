@@ -6,76 +6,76 @@ const form = document.getElementById("form");
 const text = document.getElementById("text");
 const amount = document.getElementById("amount");
 const btn = document.querySelector(".btn");
-let income = 0;
-let outcome = 0;
 
-const invalidInput = (textVal, amountVal) => {
-  if (amountVal === "" || amountVal === 0) {
-    console.log("enter amount");
-    amount.classList.add("invalidInput");
-  }
-  if (textVal === "" || amountVal === 0) {
-    console.log("enter text");
-    text.classList.add("invalidInput");
-  }
+let transactions = [];
+
+const generateID = () => {
+  Math.floor(Math.random() * 10000000);
 };
 
-const updateBalance = (classe, value) => {
-  money = parseInt(value);
-  if (classe === "plus") {
-    income += money;
-    moneyPlus.textContent = `$${income}`;
-  } else {
-    outcome += money;
-    moneyMinus.textContent = `$${outcome}`;
-  }
-
-  balance.textContent = `${income - outcome}$`;
+const generateTransactions = (transaction) => {
+  const item = document.createElement("li");
+  item.classList.add(transaction.amount > 0 ? "plus" : "minus");
+  item.innerHTML = `
+  ${transaction.text}<span>${Math.abs(
+    transaction.amount
+  )} zl</span><button class="delete-btn" onclick="deleteTransaction(${
+    transaction.id
+  })">x</button>
+  `;
+  list.appendChild(item);
 };
 
-const clearInputs = () => {
-  text.value = "";
-  amount.value = "";
-  text.classList.remove("invalidInput");
-  amount.classList.remove("invalidInput");
-};
+const updateBalance = () => {
+  const amounts = transactions.map((item) => item.amount);
 
-const addElement = (textVal, amountVal, classe) => {
-  const newItem = document.createElement("li");
-  newItem.classList.add(classe);
-  newItem.textContent = `${textVal}`;
+  const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
 
-  const span = document.createElement("span");
-  span.textContent = `$${amountVal}`;
-  newItem.appendChild(span);
+  const income = amounts
+    .filter((item) => item > 0)
+    .reduce((acc, item) => (acc += item), 0)
+    .toFixed(2);
 
-  const deleteBtn = document.createElement("button");
-  deleteBtn.classList.add("delete-btn");
-  deleteBtn.textContent = "x";
-  newItem.appendChild(deleteBtn);
+  const outcome = (
+    amounts.filter((item) => item < 0).reduce((acc, item) => (acc += item), 0) *
+    -1
+  ).toFixed(2);
 
-  list.appendChild(newItem);
-  updateBalance(classe, amountVal);
-  clearInputs();
+  balance.textContent = `${total}PLN`;
+  moneyPlus.textContent = `${income}PLN`;
+  moneyMinus.textContent = `${outcome}PLN`;
 };
 
 const addTransaction = (e) => {
   e.preventDefault();
-
-  let amountVal = amount.value;
-  const textVal = text.value;
-
-  if (textVal !== "" && amountVal > 0) {
-    const plus = "plus";
-    return addElement(textVal, amountVal, plus);
-  } else if (textVal !== "" && amountVal < 0) {
-    const minus = "minus";
-    amountVal = amountVal.substr(1);
-    return addElement(textVal, amountVal, minus);
+  if (text.value.trim() === "" || amount.value.trim() === "") {
+    console.log("error");
   } else {
-    invalidInput(textVal, amountVal);
-    return;
+    const item = {
+      id: generateID,
+      text: text.value,
+      amount: +amount.value,
+    };
+
+    transactions.push(item);
+    generateTransactions(item);
+    updateBalance();
+    text.value = "";
+    amount.value = "";
   }
 };
 
-btn.addEventListener("click", addTransaction);
+const deleteTransaction = (id) => {
+  transactions = transactions.filter((transaction) => transaction.id !== id);
+  init();
+};
+
+const init = () => {
+  list.innerHTML = "";
+  transactions.forEach(generateTransactions);
+  updateBalance();
+};
+
+init();
+
+form.addEventListener("submit", addTransaction);

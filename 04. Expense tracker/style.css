@@ -120,7 +120,7 @@ h3 {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-100%, -50%);
   background-color: var(--red);
   color: #fff;
   border: none;
@@ -129,6 +129,7 @@ h3 {
   padding: .5rem;
   cursor: pointer;
   outline: none;
+  transition: opacity .3s ease;
 }
 
 .list>li:hover .delete-btn {
@@ -154,9 +155,16 @@ h3 {
   padding: 1rem 0;
   margin: 1rem 0;
   border: none;
-  /* text-transform: uppercase; */
   color: #fff;
   background: var(--blue);
   font-weight: 500;
   cursor: pointer;
+}
+
+.btn:focus .delete-btn:focus {
+  outline: 0;
+}
+
+.invalidInput {
+  border: 2px solid var(--red);
 }
