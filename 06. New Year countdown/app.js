@@ -7,8 +7,7 @@ const currentYear = new Date().getFullYear();
 const nextYear = new Date(`January 01 ${currentYear + 1} 00:00:00`);
 
 const timePrefix = (time) => {
-  if (time < 10) return `0${time}`;
-  else return time;
+  return time < 10 ? `0${time}` : time;
 };
 
 const updateDOM = (d, h, min, sec) => {
