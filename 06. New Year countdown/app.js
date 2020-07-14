@@ -2,6 +2,8 @@ const days = document.querySelector(".days");
 const minutes = document.querySelector(".minutes");
 const hours = document.querySelector(".hours");
 const seconds = document.querySelector(".seconds");
+const countdown = document.querySelector(".countdown");
+const loader = document.querySelector(".loader");
 
 const currentYear = new Date().getFullYear();
 const nextYear = new Date(`January 01 ${currentYear + 1} 00:00:00`);
@@ -29,4 +31,10 @@ const updateCountdown = () => {
   updateDOM(d, h, min, sec);
 };
 
-const countdown = setInterval(updateCountdown, 1000);
+const hideLoader = () => {
+  loader.classList.add("loader-hide");
+  countdown.classList.add("countdown-show");
+};
+
+setInterval(updateCountdown, 1000);
+setTimeout(hideLoader, 1000);
