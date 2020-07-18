@@ -1,7 +1,44 @@
 # VanillaJS projects
 
-Vanilla JavaScript projects carried out as part of learning
+Vanilla JavaScript projects carried out as part of learning. Main technologies used:
+* HTML
+* CSS
+* JavaScript
   
 # Projects
 
 ## [Form validator 01](./01.%20Form%20validator)
+#### :tada: Project overview:
+Client side form validator with specific functions for each validation.
+#### :rocket: Motivation:
+Learn how to write and style form validators, as it is quite a common task in work of every developer.
+#### :movie_camera: Live:
+https://eszczepan-form-validator.netlify.app
+## [Movie seat booking 02](./02.%20Movie%20seat%20booking)
+#### :tada: Project overview:
+Movie seat booking app where you can book a ticket for a movie. Each movie has a diffrent price, you have a little legend that shows which one seats are selected, occupied and open. Data is being saved in localStorage, so all information is saved when you exit the browser.
+#### :rocket: Motivation:
+Build little UI which is something everyone would see in movie theater website where you pick your seats and the movie. Learn how save data in localStorage.
+## [People generator 03](./03.%20People%20generator)
+## [Expense tracker 04](./04.%20Expense%20tracker)
+## [Menu slider 05](./05.%20Menu%20slider)
+## [New Year countdown 06](./06.%20New%20Year%20countdown)
+## [Draw a name 07](./07.%20Draw%20a%20name)
+## [Add name to array 08](./08.%20Add%20name%20to%20array)
+## [Code generator 09](./09.%20Code%20generator)
+## [Generate number from the range 10](./10.%20Drawing%20number%20from%20the%20range)
+## [Computer advice 11](./11.%20Computer%20advice)
+## [Typewriter 12](./12.%20Typewriter)
+## [Slider 13](./13.%20Slider)
+## [Check age 14](./14.%20Check%20age)
+## [Website timer 15](./15.%20Website%20timer)
+## [Event countdown 16](./16.%20Event%20countdown)
+## [Stopwatch 17](./17.%20Stopwatch)
+## [To-do app 18](./18.%20To-do%20app)
+## [Click outside modal 19](./19.%20Click%20outside%20modal)
+## [Scroll to accept 20](./20.%20Scroll%20to%20accept)
+## [Tabs 21](./21.%20Tabs)
+## [One armed bandit 22](./22.%20One%20armed%20bandit%20App)
+## [Find elements 23](./23.%20Find%20elements%20on%20page)
+## [Page scroller 24](./24.%20Page%20scroller)
+## [Element movement 25](./25.%20Element%20movement%20on%20page)
