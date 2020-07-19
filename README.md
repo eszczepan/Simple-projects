@@ -20,6 +20,15 @@ Movie seat booking app where you can book a ticket for a movie. Each movie has a
 #### :rocket: Motivation:
 Build little UI which is something everyone would see in movie theater website where you pick your seats and the movie. Learn how save data in localStorage.
 ## [People generator 03](./03.%20People%20generator)
+#### :tada: Project overview:
+The application has functions such as generating the user and his wealth, doubling this wealth, sorting by richest users, displaying only millionaires and summarizing the assets of all users. User generation is done with fetch request to random user generator from randomuser.me API, which give me an array with single user informations.
+#### :rocket: Motivation:
+Learn most common array methods:
+* forEach()
+* map()
+* sort()
+* filter()
+* reduce()
 ## [Expense tracker 04](./04.%20Expense%20tracker)
 ## [Menu slider 05](./05.%20Menu%20slider)
 ## [New Year countdown 06](./06.%20New%20Year%20countdown)
