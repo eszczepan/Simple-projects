@@ -42,6 +42,10 @@ Build landing page and do something that is useful, what I see all the time:
 * menu slider
 * modal
 ## [New Year countdown 06](./06.%20New%20Year%20countdown)
+#### :tada: Project overview:
+Application which counts down until the next year. The app is completely dynamic, meaning that even if the year changes it will still work. You can also see a spinner on page loads before start the countdown.
+#### :rocket: Motivation:
+Get acquainted with dates and times in Javascript and also implement a little spinner that loads for one second and then it shows the countdown.
 ## [Draw a name 07](./07.%20Draw%20a%20name)
 ## [Add name to array 08](./08.%20Add%20name%20to%20array)
 ## [Code generator 09](./09.%20Code%20generator)
