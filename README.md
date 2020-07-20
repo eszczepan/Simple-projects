@@ -35,6 +35,12 @@ Expense tracker app where you are able to track your income and expenses. You ca
 #### :rocket: Motivation:
 Again use a lot of the high order array methods but this time used in a project that can be really useful to someone. 
 ## [Menu slider 05](./05.%20Menu%20slider)
+#### :tada: Project overview:
+Landing page with menu slider and a modal. A little hamburger button expands menu slider from left and sign up button which if you click, you will open up a modal. Modal fade in and then you can close it with either closed button or by clickng anywhere outside of the modal.
+#### :rocket: Motivation:
+Build landing page and do something that is useful, what I see all the time:
+* menu slider
+* modal
 ## [New Year countdown 06](./06.%20New%20Year%20countdown)
 ## [Draw a name 07](./07.%20Draw%20a%20name)
 ## [Add name to array 08](./08.%20Add%20name%20to%20array)
