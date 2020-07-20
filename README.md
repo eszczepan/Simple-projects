@@ -30,6 +30,10 @@ Learn most common array methods:
 * filter()
 * reduce()
 ## [Expense tracker 04](./04.%20Expense%20tracker)
+#### :tada: Project overview:
+Expense tracker app where you are able to track your income and expenses. You can see your total balance and all this stuff are saving in localStorage.
+#### :rocket: Motivation:
+Again use a lot of the high order array methods but this time used in a project that can be really useful to someone. 
 ## [Menu slider 05](./05.%20Menu%20slider)
 ## [New Year countdown 06](./06.%20New%20Year%20countdown)
 ## [Draw a name 07](./07.%20Draw%20a%20name)
