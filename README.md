@@ -47,6 +47,10 @@ Application which counts down until the next year. The app is completely dynamic
 #### :rocket: Motivation:
 Get acquainted with dates and times in Javascript and also implement a little spinner that loads for one second and then it shows the countdown.
 ## [Draw a name 07](./07.%20Draw%20a%20name)
+#### :tada: Project overview:
+One of my first projects in JS. The application consists in drawing names from an array and then displaying them on screen.
+#### :rocket: Motivation:
+Learning how to hook elements from a page with querySelector. Moreover, I saw how to event listeners work.
 ## [Add name to array 08](./08.%20Add%20name%20to%20array)
 ## [Code generator 09](./09.%20Code%20generator)
 ## [Generate number from the range 10](./10.%20Drawing%20number%20from%20the%20range)
