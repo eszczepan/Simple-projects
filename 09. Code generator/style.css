@@ -1,20 +1,21 @@
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #111;
-  color: #ccc;
+  color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button {
-  display: block;
-  margin: 1em auto;
-  background: #444;
-  color: #ccc;
+  background: #2c2c;
+  color: #fff;
   padding: 1.1em 2em;
   border: none;
-  border-radius: 1em;
+  border-radius: 50px;
   outline: none;
   text-transform: uppercase;
-  letter-spacing: .15em;
+  letter-spacing: .1em;
   transition: all 0.5s ease;
 }
 
@@ -26,6 +27,5 @@ button:hover {
 }
 
 h1 {
-  text-align: center;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
