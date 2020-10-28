@@ -8,7 +8,7 @@ Vanilla JavaScript projects carried out as part of learning. Main technologies u
 
 # Projects
 
-## [Infinite scroll 25](./25.%Infinite%20scroll)
+## [Infinite scroll 25](./25.%20Infinite%20scroll)
 
 #### :tada: Project overview:
 
@@ -23,37 +23,61 @@ Sometimes on websites we can see pagination numbers at the bottom with arrows so
 
 #### :tada: Project overview:
 
+Regular page with each section is the full height of the page. When scrolling, the entrie section moves and shows the next one. The website also has navigation that allows you to go to the selected section without scrolling.
+
 #### :rocket: Motivation:
+
+I have seen many websites uses that effect. This project also allowed me to better understand event scroll and the window methods used to do these types of effects.
 
 ## [Elements finder 23](./23.%20Elements%20finder)
 
 #### :tada: Project overview:
 
+The project consists of two forms - the first which we can add elements to document object model, and the second which we can search for elements and show information about them.
+
 #### :rocket: Motivation:
 
-## [One armed bandit 22](./22.%20One%20armed%20bandit%20App)
+A reminder of what Document Object Model is. What methods can be performed on it, what elements can be created wit it and how to search for elements on the website and so on.
+
+## [One armed bandit 22](./22.%20One%20armed%20bandit)
 
 #### :tada: Project overview:
 
+Simple game in which the player is assigned a starting value that can be increased by betting a given amount and pressing the spin button. If he loses, the bet amount is subtracted from the value before the button was pressed. The condition for winning is obtaining the same colors on three fields or diffrent colors on each square. The colors on the fields are randomized and are independent of each other.
+
 #### :rocket: Motivation:
+
+Use of object-oriented design techniques using objects, classes and class instances.
 
 ## [Tabs 21](./21.%20Tabs)
 
 #### :tada: Project overview:
 
+Tabs used to show contents that is associated to the each tab. Project is accessible - we can switch tabs by using keyboard over the each of tabs.
+
 #### :rocket: Motivation:
+
+Learn how to create accessible elements using loops and events.
 
 ## [Scroll to accept 20](./20.%20Scroll%20to%20accept)
 
 #### :tada: Project overview:
 
+The project contains an element similar to the terms and conditions document. The user cannot accept the regulations until they go to the very bottom of the document.
+
 #### :rocket: Motivation:
+
+Learn how to deal with scroll events. Scroll to accept is pretty common thing across internet like for example terms and conditions forms.
 
 ## [Modal 19](./19.%20Modal)
 
 #### :tada: Project overview:
 
+Pressing the 'learn more' buttons opens the modal with random picture. Click outside or escape keyboard button couses it to close.
+
 #### :rocket: Motivation:
+
+Learning a useful effect often used on websites.
 
 ## [To-do 18](./18.%20To-do)
 
