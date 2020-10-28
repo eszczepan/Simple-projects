@@ -12,7 +12,7 @@ Vanilla JavaScript projects carried out as part of learning. Main technologies u
 
 #### :tada: Project overview:
 
-Infinite scrolling which as a way to paginate. App fetch ten posts initially and as scroll you can see css loader and application is going to grab five more posts and so on. Posts are fetching from an API [JSONPlaceholder](https://jsonplaceholder.typicode.com/).  
+Infinite scrolling which is a way to paginate. App fetch ten posts initially and as scroll you can see css loader and application is going to grab five more posts and so on. Posts are fetching from an API [JSONPlaceholder](https://jsonplaceholder.typicode.com/).  
 I also implement search filter, we can type in a word and filter the posts we already have on page.
 
 #### :rocket: Motivation:
