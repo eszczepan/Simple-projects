@@ -10,39 +10,118 @@ Vanilla JavaScript projects carried out as part of learning. Main technologies u
 
 ## [Infinite scroll 25](./25.%Infinite%20scroll)
 
+#### :tada: Project overview:
+
+Infinite scrolling which as a way to paginate. App fetch ten posts initially and as scroll you can see css loader and application is going to grab five more posts and so on. Posts are fetching from an API [JSONPlaceholder](https://jsonplaceholder.typicode.com/).  
+I also implement search filter, we can type in a word and filter the posts we already have on page.
+
+#### :rocket: Motivation:
+
+Sometimes on websites we can see pagination numbers at the bottom with arrows so we can click to go to next page of content. In this case I decided to deal with blog posts or application like Twitter where we keep scrolling and it is basically infinite scroll.
+
 ## [Page scroller 24](./24.%20Page%20scroller)
+
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
 
 ## [Elements finder 23](./23.%20Elements%20finder)
 
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
+
 ## [One armed bandit 22](./22.%20One%20armed%20bandit%20App)
+
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
 
 ## [Tabs 21](./21.%20Tabs)
 
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
+
 ## [Scroll to accept 20](./20.%20Scroll%20to%20accept)
+
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
 
 ## [Modal 19](./19.%20Modal)
 
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
+
 ## [To-do 18](./18.%20To-do)
+
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
 
 ## [Stopwatch 17](./17.%20Stopwatch)
 
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
+
 ## [Event countdown 16](./16.%20Event%20countdown)
+
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
 
 ## [Website timer 15](./15.%20Website%20timer)
 
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
+
 ## [Age checker 14](./14.%20Age%20checker)
+
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
 
 ## [Slider 13](./13.%20Slider)
 
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
+
 ## [Typewriter 12](./12.%20Typewriter)
+
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
 
 ## [Computer advice 11](./11.%20Computer%20advice)
 
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
+
 ## [Drawing numbers 10](./10.%20Drawing%20numbers)
+
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
 
 ## [Code generator 09](./09.%20Code%20generator)
 
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
+
 ## [Interactive element 08](./08.%20Interactive%20element)
+
+#### :tada: Project overview:
+
+#### :rocket: Motivation:
+
+Get acquainted with dates and times in Javascript and also implement a little spinner that loads for one second and then it shows the countdown.
 
 ## [Questions and answers 07](./07.%20Questions%20and%20answers)
 

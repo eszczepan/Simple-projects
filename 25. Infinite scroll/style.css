@@ -68,7 +68,7 @@ body{
   opacity: 0;
   display: flex;
   justify-content: center;
-  margin: 60px;
+  margin: 30px;
   transition: opacity 0.3s eas-in;
 }
 
