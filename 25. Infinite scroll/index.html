@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <title>Infinite scroll</title>
+</head>
+
+<body>
+  <h1 class="header">My blog posts</h1>
+
+  <div class="fliter-wrapper">
+    <input type="text" id="filter" class="filter" placeholder="Search Posts...">
+  </div>
+
+  <div class="post-wrapper">
+    <div class="post">
+      <div class="number">1</div>
+      <div class="post-info">
+        <h2 class="post-title">Post One</h2>
+        <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum voluptatibus iure
+          cupiditate possimus deleniti voluptate consequatur! Architecto aliquid ullam iure incidunt in quidem tenetur
+          fugiat blanditiis possimus assumenda! Ipsum.</p>
+      </div>
+    </div>
+    <div class="post">
+      <div class="number">2</div>
+      <div class="post-info">
+        <h2 class="post-title">Post Two</h2>
+        <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum voluptatibus iure
+          cupiditate possimus deleniti voluptate consequatur! Architecto aliquid ullam iure incidunt in quidem tenetur
+          fugiat blanditiis possimus assumenda! Ipsum.</p>
+      </div>
+    </div>
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
