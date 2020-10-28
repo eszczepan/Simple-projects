@@ -83,69 +83,95 @@ Learning a useful effect often used on websites.
 
 #### :tada: Project overview:
 
+Project where you can add tasks and remove them.
+
 #### :rocket: Motivation:
+
+As simple as possible make a to-do list.
 
 ## [Stopwatch 17](./17.%20Stopwatch)
 
 #### :tada: Project overview:
 
+Simple stopwatch that can be reset with a button.
+
 #### :rocket: Motivation:
+
+Creating a simple clock with the help of window object method setInterval.
 
 ## [Event countdown 16](./16.%20Event%20countdown)
 
 #### :tada: Project overview:
 
+A timing application for selected events.
+
 #### :rocket: Motivation:
+
+Get acquainted with JavaScript Date objects represent a single moment in time.
 
 ## [Website timer 15](./15.%20Website%20timer)
 
 #### :tada: Project overview:
 
+An application that measures the length of time spen on the website.
+
 #### :rocket: Motivation:
+
+Get acquainted with setInterval method.
 
 ## [Age checker 14](./14.%20Age%20checker)
 
 #### :tada: Project overview:
 
+A form that checks the age of the user and displays a message depending on the condition.
+
 #### :rocket: Motivation:
+
+Learning how to capture values from input and how to use the conditional (ternary) operator.
 
 ## [Slider 13](./13.%20Slider)
 
 #### :tada: Project overview:
 
+Self-moving slider that can be controlled by the arrows on the keyboard.
+
 #### :rocket: Motivation:
+
+Learning how to control setInterval method and how to use findIndex array method.
 
 ## [Typewriter 12](./12.%20Typewriter)
 
 #### :tada: Project overview:
 
-#### :rocket: Motivation:
+An application that imitates the effect of typing.
 
 ## [Computer advice 11](./11.%20Computer%20advice)
 
 #### :tada: Project overview:
 
-#### :rocket: Motivation:
+Application that draws random advice to the user.
 
 ## [Drawing numbers 10](./10.%20Drawing%20numbers)
 
 #### :tada: Project overview:
 
-#### :rocket: Motivation:
+Application that draws random number from a fixed range.
 
 ## [Code generator 09](./09.%20Code%20generator)
 
 #### :tada: Project overview:
 
-#### :rocket: Motivation:
+Application generating random 12-letter code.
 
 ## [Interactive element 08](./08.%20Interactive%20element)
 
 #### :tada: Project overview:
 
+Interactive elements on website moving under the influence of the mouse movement at diffrent speed.
+
 #### :rocket: Motivation:
 
-Get acquainted with dates and times in Javascript and also implement a little spinner that loads for one second and then it shows the countdown.
+Get familiar with mouse events and learn how to manipulate them to getting an intresting moving effect.
 
 ## [Questions and answers 07](./07.%20Questions%20and%20answers)
 
